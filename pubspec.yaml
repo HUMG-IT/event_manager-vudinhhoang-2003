@@ -1,14 +1,19 @@
-name: event_manager
+name: event_manager_vudinhhoang_2003
 description: "A new Flutter project."
-publish_to: "none"
+publish_to: 'none'
 version: 0.1.0
 
 environment:
-  sdk: ^3.5.3
+  sdk: ^3.5.0
 
 dependencies:
   flutter:
     sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+  intl: any
+  localstore: ^1.4.0
+  syncfusion_flutter_calendar: ^27.1.53
 
 dev_dependencies:
   flutter_test:
@@ -17,3 +22,14 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+  generate: true
+
+# Thêm phần localization vào dưới đây
+flutter_gen:
+  localizations:
+    arb-dir: lib/l10n
+    template-arb-file: app_en.arb
+    output-localization-file: app_localizations.dart
+    supported-locales:
+      - en
+      - vi
